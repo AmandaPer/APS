@@ -7,11 +7,18 @@ import org.junit.jupiter.api.Test;
 class TesteTelaProjeto {
 
 	@Test
-	public void test1() {
+	public void testWindows() {
 		TelaProjeto T = new TelaProjeto();
 		T.setFabrica(new FabricaWindows());
 		T.montar();
-		assertEquals("Janela Windows{menuWindows, botaoWindows}",T.desenhar());
+		assertEquals("JanelaWindows{menuWindows, botaoWindows}",T.desenhar());
 	}
-
+	
+	@Test
+	public void testAndroid() {
+		TelaProjeto T = new TelaProjeto();
+		T.setFabrica(new FabricaAndroid());
+		T.montar();
+		assertEquals("JanelaAndroid{menuAndroid, botaoAndroid}",T.desenhar());
+	}
 }

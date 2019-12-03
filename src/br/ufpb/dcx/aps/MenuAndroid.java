@@ -1,10 +1,10 @@
 package br.ufpb.dcx.aps;
 
-public class MenuWindows implements Menu {
+public class MenuAndroid implements Menu {
 
 	@Override
 	public String desenhar() {
-		return "menuWindows";
+		return "menuAndroid";
 	}
 
 }

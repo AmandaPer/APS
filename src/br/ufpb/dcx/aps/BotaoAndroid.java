@@ -1,10 +1,10 @@
 package br.ufpb.dcx.aps;
 
-public class MenuWindows implements Menu {
+public class BotaoAndroid implements Botao {
 
 	@Override
 	public String desenhar() {
-		return "menuWindows";
+		return "botaoAndroid";
 	}
 
 }
